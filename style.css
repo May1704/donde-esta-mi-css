@@ -22,34 +22,37 @@ body {
     text-align: center;
     padding: 10px;
     font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .subtitle {
     text-align: center;
     font-weight: bold;
     padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px
 }
 
 .social-login {
-    /*display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content:start;
-    margin: 200px; */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
     padding: 5px;
-    height: 500px;
+    height: 300px;
 }
 
 .google-btn {
+    
     border: none;
-    height: 40px;
-    width: 40px;
-    border-radius: 200px;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
     margin: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
 }
 
 .btn-text {
@@ -60,10 +63,55 @@ body {
 
 .fb-btn {
     border: none;
-    height: 40px;
-    width: 40px;
-    border-radius: 200px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    border-radius: 10px;
     margin: 50px;
-
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
+.or {
+    text-align: center;
+    position: relative;
+}
+
+.email-login {
+    display: block;
+    padding: 5px;
+    height: 100px;
+}
+
+.email-login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+.cta-btn {
+    width: 100%;
+    background-color: #3f3ff1;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .forget-pass {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #3f3ff1;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+  }
