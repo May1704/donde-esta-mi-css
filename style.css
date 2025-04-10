@@ -15,73 +15,103 @@ body {
 
 .card {
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .title{
     text-align: center;
-    padding: 10px;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .subtitle {
     text-align: center;
     font-weight: bold;
-    padding: 10px;
+    padding: 15px;
     font-size: 18px;
-    margin-bottom: 20px
 }
 
 .social-login {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
     padding: 5px;
-    height: 300px;
+    height: 60px;
 }
 
 .google-btn {
-    
-    border: none;
-    height: 45px;
-    width: 45px;
-    border-radius: 10px;
-    margin: 50px;
     display: flex;
     align-items: center;
+    border: 3px solid rgba(239, 231, 231, 0.822);
+    background: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
     cursor: pointer;
+    padding-left: 50px;
+    padding-right: 50px;
 
+}
+
+.google-btn img, .fb-btn img {
+    height: 30px;
+    width: 30px;
 }
 
 .btn-text {
-    font-size: 20px;
-    height: 100px;
-    margin: 50px;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin-left: 5px;
 }
 
 .fb-btn {
-    border: none;
-    height: 45px;
-    width: 45px;
+    border: 3px solid #46479F;
     display: flex;
     border-radius: 10px;
-    margin: 50px;
     align-items: center;
-    justify-content: center;
     cursor: pointer;
+    background: none;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px 10px;
 }
 
 .or {
     text-align: center;
     position: relative;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.or::after, .or::before {
+    content:'';
+    border-top: 1px solid rgba(193, 184, 184, 0.715);
+    display: inline-block;
+    margin: 0 1rem;
+    transform: translateY(-0.3rem);
+    width: 8rem;
 }
 
 .email-login {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 5px;
-    height: 100px;
+    margin: 30px;
+    margin-top: -10px;
+    margin-bottom: -15px;
+}
+
+.email-login label {
+    color: gray;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .email-login input {
@@ -90,28 +120,33 @@ body {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    box-sizing: border-box;
+    box-sizing:border-box;
     font-size: 14px;
-  }
+}
 
 .cta-btn {
-    width: 100%;
-    background-color: #3f3ff1;
-    color: white;
-    border: none;
-    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
-    font-size: 14px;
+    padding: 20px 15px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: #4644B6;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin: 20px auto;
+    font-size: 12px;
     cursor: pointer;
-    margin-top: 10px;
-  }
+}
 
-  .forget-pass {
+.forget-pass {
     display: block;
     text-align: center;
-    margin-top: 15px;
+    margin: 15px;
     color: #3f3ff1;
-    font-size: 14px;
+    font-size: 15px;
     text-decoration: none;
     font-weight: bold;
-  }
+}
